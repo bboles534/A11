@@ -3,10 +3,15 @@
 
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 
 	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/jquery.slicknav.min.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +20,8 @@
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
-	<nav id="nav_menu">
+	<nav id="mobile_menu" aria-label="Mobile navigation"></nav>
+    <nav id="nav_menu" aria-label="Main navigation">
     	<ul>
         	<li><a href="index.html" class="current">Home</a></li>
         	<li><a href="index.html#guest-speakers">Speakers</a></li>
@@ -66,7 +72,8 @@
 			</ul>
 		</section>
 		<aside>
-			<h2 id="guest-speakers">Guest speakers</h2>
+            <h2 id="guest-speakers">Guest speakers</h2>
+            <div id="speakers">
 			<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
 			<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
 			<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
@@ -75,10 +82,11 @@
 			<img src="images/chua75.jpg" alt="Amy Chua photo">
 			<h3>February<br><a href="speakers/sampson.html">Scott Sampson</a></h3>
 			<img src="images/sampson75.jpg" alt="Scott Sampson photo">
-		</aside>
+		</div>
+        </aside>
 	</main>
 	<footer id="contact-information">
-		<p>&copy; November 10, 2026 Beshoy Boles</p>
+		<p>&copy; November 20, 2026 Beshoy Boles</p>
 	</footer>
 </body>
 </html>
